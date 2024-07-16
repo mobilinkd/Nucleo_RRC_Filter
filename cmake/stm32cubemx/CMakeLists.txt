@@ -9,7 +9,6 @@ enable_language(C ASM)
 target_compile_definitions(stm32cubemx INTERFACE 
 	USE_HAL_DRIVER 
 	STM32L432xx
-    ARM_MATH_CM4
     $<$<CONFIG:Debug>:DEBUG>
 )
 
@@ -19,7 +18,7 @@ target_include_directories(stm32cubemx INTERFACE
     ../../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy
     ../../Drivers/CMSIS/Device/ST/STM32L4xx/Include
     ../../Drivers/CMSIS/Include
-    ../../Drivers/CMSIS/DSP/Include
+    ../../Middlewares/ST/ARM/DSP/Inc
 )
 
 target_sources(stm32cubemx INTERFACE
@@ -56,11 +55,11 @@ target_sources(stm32cubemx INTERFACE
 )
 
 target_link_directories(stm32cubemx INTERFACE
-    ../../Drivers/CMSIS/DSP/Lib/GCC
+    ../../Middlewares/ST/ARM/DSP/Lib
 )
 
-target_link_libraries(stm32cubemx INTERFACE
-    arm_cortexM4lf_math
+target_link_libraries(stm32cubemx INTERFACE 
+	:libarm_cortexM4lf_math.a
 )
 
 # Validate that STM32CubeMX code is compatible with C standard
