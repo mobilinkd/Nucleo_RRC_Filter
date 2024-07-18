@@ -1,3 +1,17 @@
+# RRC Filter
+
+This is a root-raised cosine filter for M17 baseband demodulation. It is designed
+to run on a modified STM32L432KC Nucleo32 board. The modification needed is to have
+the SB17 solder-bridge shorted to provide HSE to the chip.
+
+It should be easy enough to change the IOC to use the HSI or MSI instead if one
+would prefer not to modify their Nucleo dev board in this way. The modification
+will prevent the use of the op-amp and PGA.
+
+Bias the input and feed it into PA7 (ADC1_IN12).
+
+The RRC-filtered output will be on PA4 (DAC1_OUT1).
+
 # Build Requirements
 
  - stm32cubeclt_1.16.0

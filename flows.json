@@ -1,0 +1,1392 @@
+[
+    {
+        "id": "9b16ea6508e0a5c7",
+        "type": "tab",
+        "label": "Basic_Flow",
+        "disabled": false,
+        "info": "# Basic flow to start with STM32CubeMonitor."
+    },
+    {
+        "id": "f9c34dde.1e2f4",
+        "type": "ui_group",
+        "name": "Chart",
+        "tab": "17d09b07.741a55",
+        "order": 1,
+        "disp": true,
+        "width": 15,
+        "collapse": false
+    },
+    {
+        "id": "5bd0165cfb5f583e",
+        "type": "exe-config",
+        "name": "RRC Filter",
+        "exefile": "/work/build/RelWithDebInfo/Nucleo_RRC_Filter.elf",
+        "exefolder": "/work/build/RelWithDebInfo",
+        "exevariablelist": [
+            {
+                "address": "0x200001c0",
+                "name": "adc_buffer[0]",
+                "type": 3,
+                "checked": false
+            },
+            {
+                "address": "0x200001e9",
+                "name": "adcState",
+                "type": 2
+            },
+            {
+                "address": "0x080037c4",
+                "name": "AHBPrescTable[0]",
+                "type": 1
+            },
+            {
+                "address": "0x080037bc",
+                "name": "APBPrescTable[0]",
+                "type": 1
+            },
+            {
+                "address": "0x20000148",
+                "name": "dac1_buffer[0]",
+                "type": 3,
+                "checked": false
+            },
+            {
+                "address": "0x20000120",
+                "name": "dac2_buffer[0]",
+                "type": 3
+            },
+            {
+                "address": "0x20000170",
+                "name": "dac_buffer[0]",
+                "type": 3,
+                "checked": false
+            },
+            {
+                "address": "0x200001e8",
+                "name": "dacState",
+                "type": 2
+            },
+            {
+                "address": "0x080036a0",
+                "name": "filter_taps[0]",
+                "type": 4
+            },
+            {
+                "address": "0x20000030",
+                "name": "fir_state[0]",
+                "type": 4
+            },
+            {
+                "address": "0x200004d4",
+                "name": "hadc1.DMA_Handle",
+                "type": 5
+            },
+            {
+                "address": "0x200004e0",
+                "name": "hadc1.ErrorCode",
+                "type": 5
+            },
+            {
+                "address": "0x2000048c",
+                "name": "hadc1.Init.ClockPrescaler",
+                "type": 5
+            },
+            {
+                "address": "0x200004a1",
+                "name": "hadc1.Init.ContinuousConvMode",
+                "type": 2
+            },
+            {
+                "address": "0x20000494",
+                "name": "hadc1.Init.DataAlign",
+                "type": 5
+            },
+            {
+                "address": "0x200004a8",
+                "name": "hadc1.Init.DiscontinuousConvMode",
+                "type": 2
+            },
+            {
+                "address": "0x200004b8",
+                "name": "hadc1.Init.DMAContinuousRequests",
+                "type": 2
+            },
+            {
+                "address": "0x2000049c",
+                "name": "hadc1.Init.EOCSelection",
+                "type": 5
+            },
+            {
+                "address": "0x200004b0",
+                "name": "hadc1.Init.ExternalTrigConv",
+                "type": 5
+            },
+            {
+                "address": "0x200004b4",
+                "name": "hadc1.Init.ExternalTrigConvEdge",
+                "type": 5
+            },
+            {
+                "address": "0x200004a0",
+                "name": "hadc1.Init.LowPowerAutoWait",
+                "type": 2
+            },
+            {
+                "address": "0x200004a4",
+                "name": "hadc1.Init.NbrOfConversion",
+                "type": 5
+            },
+            {
+                "address": "0x200004ac",
+                "name": "hadc1.Init.NbrOfDiscConversion",
+                "type": 5
+            },
+            {
+                "address": "0x200004bc",
+                "name": "hadc1.Init.Overrun",
+                "type": 5
+            },
+            {
+                "address": "0x200004d0",
+                "name": "hadc1.Init.Oversampling.OversamplingStopReset",
+                "type": 5
+            },
+            {
+                "address": "0x200004c4",
+                "name": "hadc1.Init.Oversampling.Ratio",
+                "type": 5
+            },
+            {
+                "address": "0x200004c8",
+                "name": "hadc1.Init.Oversampling.RightBitShift",
+                "type": 5
+            },
+            {
+                "address": "0x200004cc",
+                "name": "hadc1.Init.Oversampling.TriggeredMode",
+                "type": 5
+            },
+            {
+                "address": "0x200004c0",
+                "name": "hadc1.Init.OversamplingMode",
+                "type": 2
+            },
+            {
+                "address": "0x20000490",
+                "name": "hadc1.Init.Resolution",
+                "type": 5
+            },
+            {
+                "address": "0x20000498",
+                "name": "hadc1.Init.ScanConvMode",
+                "type": 5
+            },
+            {
+                "address": "0x200004e8",
+                "name": "hadc1.InjectionConfig.ChannelCount",
+                "type": 5
+            },
+            {
+                "address": "0x200004e4",
+                "name": "hadc1.InjectionConfig.ContextQueue",
+                "type": 5
+            },
+            {
+                "address": "0x20000488",
+                "name": "hadc1.Instance",
+                "type": 5,
+                "checked": false
+            },
+            {
+                "address": "0x200004d8",
+                "name": "hadc1.Lock",
+                "type": 2
+            },
+            {
+                "address": "0x200004dc",
+                "name": "hadc1.State",
+                "type": 5
+            },
+            {
+                "address": "0x20000434",
+                "name": "hdac1.DMA_Handle1",
+                "type": 5
+            },
+            {
+                "address": "0x20000438",
+                "name": "hdac1.DMA_Handle2",
+                "type": 5
+            },
+            {
+                "address": "0x2000043c",
+                "name": "hdac1.ErrorCode",
+                "type": 5
+            },
+            {
+                "address": "0x2000042c",
+                "name": "hdac1.Instance",
+                "type": 5
+            },
+            {
+                "address": "0x20000431",
+                "name": "hdac1.Lock",
+                "type": 2
+            },
+            {
+                "address": "0x20000430",
+                "name": "hdac1.State",
+                "type": 2
+            },
+            {
+                "address": "0x20000484",
+                "name": "hdma_adc1.ChannelIndex",
+                "type": 5
+            },
+            {
+                "address": "0x20000480",
+                "name": "hdma_adc1.DmaBaseAddress",
+                "type": 5
+            },
+            {
+                "address": "0x2000047c",
+                "name": "hdma_adc1.ErrorCode",
+                "type": 5
+            },
+            {
+                "address": "0x20000448",
+                "name": "hdma_adc1.Init.Direction",
+                "type": 5
+            },
+            {
+                "address": "0x20000458",
+                "name": "hdma_adc1.Init.MemDataAlignment",
+                "type": 5
+            },
+            {
+                "address": "0x20000450",
+                "name": "hdma_adc1.Init.MemInc",
+                "type": 5
+            },
+            {
+                "address": "0x2000045c",
+                "name": "hdma_adc1.Init.Mode",
+                "type": 5
+            },
+            {
+                "address": "0x20000454",
+                "name": "hdma_adc1.Init.PeriphDataAlignment",
+                "type": 5
+            },
+            {
+                "address": "0x2000044c",
+                "name": "hdma_adc1.Init.PeriphInc",
+                "type": 5
+            },
+            {
+                "address": "0x20000460",
+                "name": "hdma_adc1.Init.Priority",
+                "type": 5
+            },
+            {
+                "address": "0x20000444",
+                "name": "hdma_adc1.Init.Request",
+                "type": 5
+            },
+            {
+                "address": "0x20000440",
+                "name": "hdma_adc1.Instance",
+                "type": 5
+            },
+            {
+                "address": "0x20000464",
+                "name": "hdma_adc1.Lock",
+                "type": 2
+            },
+            {
+                "address": "0x20000468",
+                "name": "hdma_adc1.Parent",
+                "type": 5
+            },
+            {
+                "address": "0x20000465",
+                "name": "hdma_adc1.State",
+                "type": 2
+            },
+            {
+                "address": "0x20000478",
+                "name": "hdma_adc1.XferAbortCallback",
+                "type": 5
+            },
+            {
+                "address": "0x2000046c",
+                "name": "hdma_adc1.XferCpltCallback",
+                "type": 5
+            },
+            {
+                "address": "0x20000474",
+                "name": "hdma_adc1.XferErrorCallback",
+                "type": 5
+            },
+            {
+                "address": "0x20000470",
+                "name": "hdma_adc1.XferHalfCpltCallback",
+                "type": 5
+            },
+            {
+                "address": "0x20000428",
+                "name": "hdma_dac_ch1.ChannelIndex",
+                "type": 5
+            },
+            {
+                "address": "0x20000424",
+                "name": "hdma_dac_ch1.DmaBaseAddress",
+                "type": 5,
+                "checked": false
+            },
+            {
+                "address": "0x20000420",
+                "name": "hdma_dac_ch1.ErrorCode",
+                "type": 5
+            },
+            {
+                "address": "0x200003ec",
+                "name": "hdma_dac_ch1.Init.Direction",
+                "type": 5
+            },
+            {
+                "address": "0x200003fc",
+                "name": "hdma_dac_ch1.Init.MemDataAlignment",
+                "type": 5
+            },
+            {
+                "address": "0x200003f4",
+                "name": "hdma_dac_ch1.Init.MemInc",
+                "type": 5
+            },
+            {
+                "address": "0x20000400",
+                "name": "hdma_dac_ch1.Init.Mode",
+                "type": 5
+            },
+            {
+                "address": "0x200003f8",
+                "name": "hdma_dac_ch1.Init.PeriphDataAlignment",
+                "type": 5
+            },
+            {
+                "address": "0x200003f0",
+                "name": "hdma_dac_ch1.Init.PeriphInc",
+                "type": 5
+            },
+            {
+                "address": "0x20000404",
+                "name": "hdma_dac_ch1.Init.Priority",
+                "type": 5
+            },
+            {
+                "address": "0x200003e8",
+                "name": "hdma_dac_ch1.Init.Request",
+                "type": 5
+            },
+            {
+                "address": "0x200003e4",
+                "name": "hdma_dac_ch1.Instance",
+                "type": 5
+            },
+            {
+                "address": "0x20000408",
+                "name": "hdma_dac_ch1.Lock",
+                "type": 2
+            },
+            {
+                "address": "0x2000040c",
+                "name": "hdma_dac_ch1.Parent",
+                "type": 5
+            },
+            {
+                "address": "0x20000409",
+                "name": "hdma_dac_ch1.State",
+                "type": 2
+            },
+            {
+                "address": "0x2000041c",
+                "name": "hdma_dac_ch1.XferAbortCallback",
+                "type": 5
+            },
+            {
+                "address": "0x20000410",
+                "name": "hdma_dac_ch1.XferCpltCallback",
+                "type": 5
+            },
+            {
+                "address": "0x20000418",
+                "name": "hdma_dac_ch1.XferErrorCallback",
+                "type": 5
+            },
+            {
+                "address": "0x20000414",
+                "name": "hdma_dac_ch1.XferHalfCpltCallback",
+                "type": 5
+            },
+            {
+                "address": "0x200003e0",
+                "name": "hdma_dac_ch2.ChannelIndex",
+                "type": 5
+            },
+            {
+                "address": "0x200003dc",
+                "name": "hdma_dac_ch2.DmaBaseAddress",
+                "type": 5
+            },
+            {
+                "address": "0x200003d8",
+                "name": "hdma_dac_ch2.ErrorCode",
+                "type": 5
+            },
+            {
+                "address": "0x200003a4",
+                "name": "hdma_dac_ch2.Init.Direction",
+                "type": 5
+            },
+            {
+                "address": "0x200003b4",
+                "name": "hdma_dac_ch2.Init.MemDataAlignment",
+                "type": 5
+            },
+            {
+                "address": "0x200003ac",
+                "name": "hdma_dac_ch2.Init.MemInc",
+                "type": 5
+            },
+            {
+                "address": "0x200003b8",
+                "name": "hdma_dac_ch2.Init.Mode",
+                "type": 5
+            },
+            {
+                "address": "0x200003b0",
+                "name": "hdma_dac_ch2.Init.PeriphDataAlignment",
+                "type": 5
+            },
+            {
+                "address": "0x200003a8",
+                "name": "hdma_dac_ch2.Init.PeriphInc",
+                "type": 5
+            },
+            {
+                "address": "0x200003bc",
+                "name": "hdma_dac_ch2.Init.Priority",
+                "type": 5
+            },
+            {
+                "address": "0x200003a0",
+                "name": "hdma_dac_ch2.Init.Request",
+                "type": 5
+            },
+            {
+                "address": "0x2000039c",
+                "name": "hdma_dac_ch2.Instance",
+                "type": 5
+            },
+            {
+                "address": "0x200003c0",
+                "name": "hdma_dac_ch2.Lock",
+                "type": 2
+            },
+            {
+                "address": "0x200003c4",
+                "name": "hdma_dac_ch2.Parent",
+                "type": 5
+            },
+            {
+                "address": "0x200003c1",
+                "name": "hdma_dac_ch2.State",
+                "type": 2
+            },
+            {
+                "address": "0x200003d4",
+                "name": "hdma_dac_ch2.XferAbortCallback",
+                "type": 5
+            },
+            {
+                "address": "0x200003c8",
+                "name": "hdma_dac_ch2.XferCpltCallback",
+                "type": 5
+            },
+            {
+                "address": "0x200003d0",
+                "name": "hdma_dac_ch2.XferErrorCallback",
+                "type": 5
+            },
+            {
+                "address": "0x200003cc",
+                "name": "hdma_dac_ch2.XferHalfCpltCallback",
+                "type": 5
+            },
+            {
+                "address": "0x20000278",
+                "name": "hdma_usart2_rx.ChannelIndex",
+                "type": 5
+            },
+            {
+                "address": "0x20000274",
+                "name": "hdma_usart2_rx.DmaBaseAddress",
+                "type": 5
+            },
+            {
+                "address": "0x20000270",
+                "name": "hdma_usart2_rx.ErrorCode",
+                "type": 5
+            },
+            {
+                "address": "0x2000023c",
+                "name": "hdma_usart2_rx.Init.Direction",
+                "type": 5
+            },
+            {
+                "address": "0x2000024c",
+                "name": "hdma_usart2_rx.Init.MemDataAlignment",
+                "type": 5
+            },
+            {
+                "address": "0x20000244",
+                "name": "hdma_usart2_rx.Init.MemInc",
+                "type": 5
+            },
+            {
+                "address": "0x20000250",
+                "name": "hdma_usart2_rx.Init.Mode",
+                "type": 5
+            },
+            {
+                "address": "0x20000248",
+                "name": "hdma_usart2_rx.Init.PeriphDataAlignment",
+                "type": 5
+            },
+            {
+                "address": "0x20000240",
+                "name": "hdma_usart2_rx.Init.PeriphInc",
+                "type": 5
+            },
+            {
+                "address": "0x20000254",
+                "name": "hdma_usart2_rx.Init.Priority",
+                "type": 5
+            },
+            {
+                "address": "0x20000238",
+                "name": "hdma_usart2_rx.Init.Request",
+                "type": 5
+            },
+            {
+                "address": "0x20000234",
+                "name": "hdma_usart2_rx.Instance",
+                "type": 5
+            },
+            {
+                "address": "0x20000258",
+                "name": "hdma_usart2_rx.Lock",
+                "type": 2
+            },
+            {
+                "address": "0x2000025c",
+                "name": "hdma_usart2_rx.Parent",
+                "type": 5
+            },
+            {
+                "address": "0x20000259",
+                "name": "hdma_usart2_rx.State",
+                "type": 2
+            },
+            {
+                "address": "0x2000026c",
+                "name": "hdma_usart2_rx.XferAbortCallback",
+                "type": 5
+            },
+            {
+                "address": "0x20000260",
+                "name": "hdma_usart2_rx.XferCpltCallback",
+                "type": 5
+            },
+            {
+                "address": "0x20000268",
+                "name": "hdma_usart2_rx.XferErrorCallback",
+                "type": 5
+            },
+            {
+                "address": "0x20000264",
+                "name": "hdma_usart2_rx.XferHalfCpltCallback",
+                "type": 5
+            },
+            {
+                "address": "0x20000230",
+                "name": "hdma_usart2_tx.ChannelIndex",
+                "type": 5
+            },
+            {
+                "address": "0x2000022c",
+                "name": "hdma_usart2_tx.DmaBaseAddress",
+                "type": 5
+            },
+            {
+                "address": "0x20000228",
+                "name": "hdma_usart2_tx.ErrorCode",
+                "type": 5
+            },
+            {
+                "address": "0x200001f4",
+                "name": "hdma_usart2_tx.Init.Direction",
+                "type": 5
+            },
+            {
+                "address": "0x20000204",
+                "name": "hdma_usart2_tx.Init.MemDataAlignment",
+                "type": 5
+            },
+            {
+                "address": "0x200001fc",
+                "name": "hdma_usart2_tx.Init.MemInc",
+                "type": 5
+            },
+            {
+                "address": "0x20000208",
+                "name": "hdma_usart2_tx.Init.Mode",
+                "type": 5
+            },
+            {
+                "address": "0x20000200",
+                "name": "hdma_usart2_tx.Init.PeriphDataAlignment",
+                "type": 5
+            },
+            {
+                "address": "0x200001f8",
+                "name": "hdma_usart2_tx.Init.PeriphInc",
+                "type": 5
+            },
+            {
+                "address": "0x2000020c",
+                "name": "hdma_usart2_tx.Init.Priority",
+                "type": 5
+            },
+            {
+                "address": "0x200001f0",
+                "name": "hdma_usart2_tx.Init.Request",
+                "type": 5
+            },
+            {
+                "address": "0x200001ec",
+                "name": "hdma_usart2_tx.Instance",
+                "type": 5
+            },
+            {
+                "address": "0x20000210",
+                "name": "hdma_usart2_tx.Lock",
+                "type": 2
+            },
+            {
+                "address": "0x20000214",
+                "name": "hdma_usart2_tx.Parent",
+                "type": 5
+            },
+            {
+                "address": "0x20000211",
+                "name": "hdma_usart2_tx.State",
+                "type": 2
+            },
+            {
+                "address": "0x20000224",
+                "name": "hdma_usart2_tx.XferAbortCallback",
+                "type": 5
+            },
+            {
+                "address": "0x20000218",
+                "name": "hdma_usart2_tx.XferCpltCallback",
+                "type": 5
+            },
+            {
+                "address": "0x20000220",
+                "name": "hdma_usart2_tx.XferErrorCallback",
+                "type": 5
+            },
+            {
+                "address": "0x2000021c",
+                "name": "hdma_usart2_tx.XferHalfCpltCallback",
+                "type": 5
+            },
+            {
+                "address": "0x2000036c",
+                "name": "htim6.Channel",
+                "type": 2
+            },
+            {
+                "address": "0x20000394",
+                "name": "htim6.ChannelNState[0]",
+                "type": 2
+            },
+            {
+                "address": "0x2000038e",
+                "name": "htim6.ChannelState[0]",
+                "type": 2
+            },
+            {
+                "address": "0x20000398",
+                "name": "htim6.DMABurstState",
+                "type": 2
+            },
+            {
+                "address": "0x20000370",
+                "name": "htim6.hdma[0]",
+                "type": 5
+            },
+            {
+                "address": "0x20000368",
+                "name": "htim6.Init.AutoReloadPreload",
+                "type": 5
+            },
+            {
+                "address": "0x20000360",
+                "name": "htim6.Init.ClockDivision",
+                "type": 5
+            },
+            {
+                "address": "0x20000358",
+                "name": "htim6.Init.CounterMode",
+                "type": 5
+            },
+            {
+                "address": "0x2000035c",
+                "name": "htim6.Init.Period",
+                "type": 5
+            },
+            {
+                "address": "0x20000354",
+                "name": "htim6.Init.Prescaler",
+                "type": 5
+            },
+            {
+                "address": "0x20000364",
+                "name": "htim6.Init.RepetitionCounter",
+                "type": 5
+            },
+            {
+                "address": "0x20000350",
+                "name": "htim6.Instance",
+                "type": 5
+            },
+            {
+                "address": "0x2000038c",
+                "name": "htim6.Lock",
+                "type": 2
+            },
+            {
+                "address": "0x2000038d",
+                "name": "htim6.State",
+                "type": 2
+            },
+            {
+                "address": "0x20000320",
+                "name": "htim7.Channel",
+                "type": 2
+            },
+            {
+                "address": "0x20000348",
+                "name": "htim7.ChannelNState[0]",
+                "type": 2
+            },
+            {
+                "address": "0x20000342",
+                "name": "htim7.ChannelState[0]",
+                "type": 2
+            },
+            {
+                "address": "0x2000034c",
+                "name": "htim7.DMABurstState",
+                "type": 2
+            },
+            {
+                "address": "0x20000324",
+                "name": "htim7.hdma[0]",
+                "type": 5
+            },
+            {
+                "address": "0x2000031c",
+                "name": "htim7.Init.AutoReloadPreload",
+                "type": 5
+            },
+            {
+                "address": "0x20000314",
+                "name": "htim7.Init.ClockDivision",
+                "type": 5
+            },
+            {
+                "address": "0x2000030c",
+                "name": "htim7.Init.CounterMode",
+                "type": 5
+            },
+            {
+                "address": "0x20000310",
+                "name": "htim7.Init.Period",
+                "type": 5
+            },
+            {
+                "address": "0x20000308",
+                "name": "htim7.Init.Prescaler",
+                "type": 5
+            },
+            {
+                "address": "0x20000318",
+                "name": "htim7.Init.RepetitionCounter",
+                "type": 5
+            },
+            {
+                "address": "0x20000304",
+                "name": "htim7.Instance",
+                "type": 5
+            },
+            {
+                "address": "0x20000340",
+                "name": "htim7.Lock",
+                "type": 2
+            },
+            {
+                "address": "0x20000341",
+                "name": "htim7.State",
+                "type": 2
+            },
+            {
+                "address": "0x200002a0",
+                "name": "huart2.AdvancedInit.AdvFeatureInit",
+                "type": 5
+            },
+            {
+                "address": "0x200002bc",
+                "name": "huart2.AdvancedInit.AutoBaudRateEnable",
+                "type": 5
+            },
+            {
+                "address": "0x200002c0",
+                "name": "huart2.AdvancedInit.AutoBaudRateMode",
+                "type": 5
+            },
+            {
+                "address": "0x200002ac",
+                "name": "huart2.AdvancedInit.DataInvert",
+                "type": 5
+            },
+            {
+                "address": "0x200002b8",
+                "name": "huart2.AdvancedInit.DMADisableonRxError",
+                "type": 5
+            },
+            {
+                "address": "0x200002c4",
+                "name": "huart2.AdvancedInit.MSBFirst",
+                "type": 5
+            },
+            {
+                "address": "0x200002b4",
+                "name": "huart2.AdvancedInit.OverrunDisable",
+                "type": 5
+            },
+            {
+                "address": "0x200002a8",
+                "name": "huart2.AdvancedInit.RxPinLevelInvert",
+                "type": 5
+            },
+            {
+                "address": "0x200002b0",
+                "name": "huart2.AdvancedInit.Swap",
+                "type": 5
+            },
+            {
+                "address": "0x200002a4",
+                "name": "huart2.AdvancedInit.TxPinLevelInvert",
+                "type": 5
+            },
+            {
+                "address": "0x20000300",
+                "name": "huart2.ErrorCode",
+                "type": 5
+            },
+            {
+                "address": "0x200002f8",
+                "name": "huart2.gState",
+                "type": 5
+            },
+            {
+                "address": "0x200002f0",
+                "name": "huart2.hdmarx",
+                "type": 5
+            },
+            {
+                "address": "0x200002ec",
+                "name": "huart2.hdmatx",
+                "type": 5
+            },
+            {
+                "address": "0x20000280",
+                "name": "huart2.Init.BaudRate",
+                "type": 5
+            },
+            {
+                "address": "0x20000294",
+                "name": "huart2.Init.HwFlowCtl",
+                "type": 5
+            },
+            {
+                "address": "0x20000290",
+                "name": "huart2.Init.Mode",
+                "type": 5
+            },
+            {
+                "address": "0x2000029c",
+                "name": "huart2.Init.OneBitSampling",
+                "type": 5
+            },
+            {
+                "address": "0x20000298",
+                "name": "huart2.Init.OverSampling",
+                "type": 5
+            },
+            {
+                "address": "0x2000028c",
+                "name": "huart2.Init.Parity",
+                "type": 5
+            },
+            {
+                "address": "0x20000288",
+                "name": "huart2.Init.StopBits",
+                "type": 5
+            },
+            {
+                "address": "0x20000284",
+                "name": "huart2.Init.WordLength",
+                "type": 5
+            },
+            {
+                "address": "0x2000027c",
+                "name": "huart2.Instance",
+                "type": 5
+            },
+            {
+                "address": "0x200002f4",
+                "name": "huart2.Lock",
+                "type": 2
+            },
+            {
+                "address": "0x200002d8",
+                "name": "huart2.Mask",
+                "type": 3
+            },
+            {
+                "address": "0x200002d0",
+                "name": "huart2.pRxBuffPtr",
+                "type": 5
+            },
+            {
+                "address": "0x200002c8",
+                "name": "huart2.pTxBuffPtr",
+                "type": 5
+            },
+            {
+                "address": "0x200002dc",
+                "name": "huart2.ReceptionType",
+                "type": 5
+            },
+            {
+                "address": "0x200002e0",
+                "name": "huart2.RxEventType",
+                "type": 5
+            },
+            {
+                "address": "0x200002e4",
+                "name": "huart2.RxISR",
+                "type": 5
+            },
+            {
+                "address": "0x200002fc",
+                "name": "huart2.RxState",
+                "type": 5
+            },
+            {
+                "address": "0x200002d6",
+                "name": "huart2.RxXferCount",
+                "type": 3
+            },
+            {
+                "address": "0x200002d4",
+                "name": "huart2.RxXferSize",
+                "type": 3
+            },
+            {
+                "address": "0x200002e8",
+                "name": "huart2.TxISR",
+                "type": 5
+            },
+            {
+                "address": "0x200002ce",
+                "name": "huart2.TxXferCount",
+                "type": 3
+            },
+            {
+                "address": "0x200002cc",
+                "name": "huart2.TxXferSize",
+                "type": 3
+            },
+            {
+                "address": "0x0800378c",
+                "name": "MSIRangeTable[0]",
+                "type": 5
+            },
+            {
+                "address": "0x20000008",
+                "name": "SystemCoreClock",
+                "type": 5
+            },
+            {
+                "address": "0x200004ec",
+                "name": "uwTick",
+                "type": 5
+            },
+            {
+                "address": "0x20000000",
+                "name": "uwTickFreq",
+                "type": 2
+            },
+            {
+                "address": "0x20000004",
+                "name": "uwTickPrio",
+                "type": 5
+            },
+            {
+                "address": "0x2000002c",
+                "name": "ym1",
+                "type": 3
+            }
+        ],
+        "expand": false,
+        "filename": "Nucleo_RRC_Filter.elf",
+        "exeModifiedTime": 1721169152310,
+        "configLastUpdate": 1721260358757
+    },
+    {
+        "id": "17d09b07.741a55",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "fb0e849d93c6c818",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "6943693b1e446973",
+        "type": "probe",
+        "probeid": "0669FF303032424257011949",
+        "probename": "ST-Link v2-1B 0669FF303032424257011949",
+        "protocol": "SWD",
+        "frequency": "1.8 MHz - Default",
+        "probeproperty": "{\"SWD\":[\"4.6 MHz\",\"1.8 MHz - Default\",\"950 kHz\",\"400 kHz\",\"150 kHz\"],\"JTAG\":[\"18 MHz\",\"9 MHz\",\"4.5 MHz\",\"2.25 MHz\",\"1.12 MHz - Default\",\"560 kHz\",\"280 kHz\",\"140 kHz\"]}",
+        "probeversion": "ST Link firmware version V2.J45",
+        "connectionType": "p2p",
+        "nickname": "New Nucleo32"
+    },
+    {
+        "id": "9491e04ef074217d",
+        "type": "probe",
+        "probeid": "0669FF303032424257011949",
+        "probename": "ST-Link v2-1B 0669FF303032424257011949",
+        "protocol": "SWD",
+        "frequency": "4.6 MHz",
+        "probeproperty": "{\"SWD\":[\"4.6 MHz\",\"1.8 MHz - Default\",\"950 kHz\",\"400 kHz\",\"150 kHz\"],\"JTAG\":[\"18 MHz\",\"9 MHz\",\"4.5 MHz\",\"2.25 MHz\",\"1.12 MHz - Default\",\"560 kHz\",\"280 kHz\",\"140 kHz\"]}",
+        "probeversion": "ST Link firmware version V2.J45",
+        "connectionType": "p2p",
+        "nickname": ""
+    },
+    {
+        "id": "1e29acc648b1e3d3",
+        "type": "ui_chartst",
+        "z": "9b16ea6508e0a5c7",
+        "group": "f9c34dde.1e2f4",
+        "name": "myChart",
+        "order": 4,
+        "width": 15,
+        "height": 9,
+        "chartType": "line",
+        "curveType": "linear",
+        "duration": "10",
+        "ymin": "",
+        "ymax": "",
+        "x": 580,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "d577fce5b90e94ad",
+        "type": "acquisition in",
+        "z": "9b16ea6508e0a5c7",
+        "name": "myProbe_In",
+        "probeconfig": "9491e04ef074217d",
+        "x": 130,
+        "y": 280,
+        "wires": [
+            [
+                "bf24dd7d70b4eb05"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "de59baa09d88527b",
+        "type": "variables",
+        "z": "9b16ea6508e0a5c7",
+        "groupname": "myVariables",
+        "accesspoint": "0",
+        "execonfig": "5bd0165cfb5f583e",
+        "variablelist": [
+            {
+                "name": "dac_out",
+                "address": "0x40007408",
+                "type": "3"
+            }
+        ],
+        "triggerstartmode": "manual",
+        "triggername": "dac_out",
+        "triggerthreshold": "30000",
+        "frequency": "48",
+        "frequencyType": "custom",
+        "snapshotheader": "",
+        "mode": "direct",
+        "lastImportedTime": 1721260672781,
+        "openStatus": true,
+        "x": 330,
+        "y": 120,
+        "wires": [
+            [
+                "22927cb19bb2c333"
+            ],
+            [
+                "06fb1a8738b0ef54"
+            ]
+        ]
+    },
+    {
+        "id": "1891a7470695ef5f",
+        "type": "ui_button",
+        "z": "9b16ea6508e0a5c7",
+        "name": "",
+        "group": "f9c34dde.1e2f4",
+        "order": 3,
+        "width": 5,
+        "height": 1,
+        "passthru": false,
+        "label": "Clear Graphs",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "clear",
+        "x": 430,
+        "y": 380,
+        "wires": [
+            [
+                "1e29acc648b1e3d3"
+            ]
+        ]
+    },
+    {
+        "id": "468963015631f980",
+        "type": "ui_button",
+        "z": "9b16ea6508e0a5c7",
+        "name": "",
+        "group": "f9c34dde.1e2f4",
+        "order": 1,
+        "width": 5,
+        "height": 1,
+        "passthru": false,
+        "label": "START Acquisition",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "start",
+        "x": 110,
+        "y": 80,
+        "wires": [
+            [
+                "de59baa09d88527b"
+            ]
+        ]
+    },
+    {
+        "id": "f186c05b3f7a2005",
+        "type": "ui_button",
+        "z": "9b16ea6508e0a5c7",
+        "name": "",
+        "group": "f9c34dde.1e2f4",
+        "order": 2,
+        "width": 5,
+        "height": 1,
+        "passthru": true,
+        "label": "STOP Acquisition",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "stop",
+        "x": 110,
+        "y": 160,
+        "wires": [
+            [
+                "de59baa09d88527b"
+            ]
+        ]
+    },
+    {
+        "id": "bf24dd7d70b4eb05",
+        "type": "processing",
+        "z": "9b16ea6508e0a5c7",
+        "groupname": "myVariables",
+        "groupid": "d59587ff.cd1748",
+        "expressions": [],
+        "statistics": [],
+        "logmode": "no",
+        "logformat": "stcm",
+        "x": 390,
+        "y": 280,
+        "wires": [
+            [
+                "1e29acc648b1e3d3"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "06fb1a8738b0ef54",
+        "type": "ui_toast",
+        "z": "9b16ea6508e0a5c7",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "topic": "",
+        "name": "",
+        "x": 530,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "22927cb19bb2c333",
+        "type": "acquisition out",
+        "z": "9b16ea6508e0a5c7",
+        "name": "myProbe_Out",
+        "probeconfig": "9491e04ef074217d",
+        "x": 540,
+        "y": 100,
+        "wires": []
+    }
+]
