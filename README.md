@@ -1,8 +1,17 @@
 # RRC Filter
 
-This is a root-raised cosine filter for M17 baseband demodulation. It is designed
-to run on a modified STM32L432KC Nucleo32 board. The modification needed is to have
-the SB17 solder-bridge shorted to provide HSE to the chip.
+Root-raised cosine filter for M17 baseband demodulation.
+
+<figure>
+  <img src="baseband_rrc.png" alt="Baseband and RRC signals from DSP filter"/>
+  <figcaption>Baseband signal in pink, RRC filtered signal in yellow.</figcaption>
+</figure>
+
+# Hardware Requirements
+
+This is a digital filter running at 48ksps. It is designed to run on a modified
+STM32L432KC Nucleo32 board. The modification needed is to have the SB17 solder
+bridge shorted to provide HSE to the chip.
 
 It should be easy enough to change the IOC to use the HSI or MSI instead if one
 would prefer not to modify their Nucleo dev board in this way. The modification
